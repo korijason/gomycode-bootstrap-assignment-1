@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden Travel Agency Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="Icon"
+      href="images/icons8-alpha-flag-30.png>"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Golden Travel Agency</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="display-4">Explore the Horizon</h1>
+        <p class="lead">
+          Discover amazing destinations and book your dream vacation today!
+        </p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Get Started</a>
+        <img
+          src="images/shu-Tunisia-SidiBouSaid-760300645-1440x823.jpg"
+          class="img-fluid"
+        />
+      </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="container">
+      <h2 class="text-center mb-4">Popular Destinations</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="images/kenia-laenderinformationen-elephanten-kilimandjaro-natucate.webp"
+              class="card-img-top"
+              alt="Destination 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Maasai Mara, Kenya</h5>
+              <p class="card-text">
+                Explore the beautiful landscapes of Maasai Mara, Kenya.
+              </p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="images/Cameroon-valley_4x3.avif"
+              class="card-img-top"
+              alt="Destination 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cameron Valley, Malaysia</h5>
+              <p class="card-text">
+                Experience the culture and history of the Cameron Valley.
+              </p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="images/New_york_times_square-terabass.jpg"
+              class="card-img-top"
+              alt="Destination 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">New York City, New York, U.S.A</h5>
+              <p class="card-text">Enjoy the unreal sights of The Big Apple.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section class="container">
+      <h2 class="text-center mb-4">Featured Tours</h2>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="tour1">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link"
+                data-toggle="collapse"
+                data-target="#collapse1"
+                aria-expanded="true"
+                aria-controls="collapse1"
+              >
+                Tour Package 1
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapse1"
+            class="collapse show"
+            aria-labelledby="tour1"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              Discover the highlights of Tour Package 1.
+              <a href="#">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="tour2">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapse2"
+                aria-expanded="false"
+                aria-controls="collapse2"
+              >
+                Tour Package 2
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapse2"
+            class="collapse"
+            aria-labelledby="tour2"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              Experience the wonders of Tour Package 2.
+              <a href="#">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="tour3">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapse3"
+                aria-expanded="false"
+                aria-controls="collapse3"
+              >
+                Tour Package 3
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapse3"
+            class="collapse"
+            aria-labelledby="tour3"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              Enjoy the adventures of Tour Package 3.
+              <a href="#">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="destination">Destination of Interest</label>
+          <input
+            type="text"
+            class="form-control"
+            id="destination"
+            placeholder="Which destination are you interested in?"
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="3"
+            placeholder="Your message"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3">
+      <div class="container text-center">
+        <span class="text-muted"
+          >© Golden 2024 Travel Agency. All rights reserved.</span
+        >
+        <ul class="list-inline">
+          <li class="list-inline-item"></li>
+
+          <li class="list-inline-item">
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
